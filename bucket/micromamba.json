@@ -11,11 +11,11 @@
     },
     "bin": "micromamba.exe",
     "notes": [
-        "没有 shim 之前请先设置环境变量（本机已按下列值配置为【用户变量】）：",
-        "  MAMBA_ROOT_PREFIX = D:\\micromamba",
-        "  MAMBA_EXE         = C:\\Users\\ZhuanZ\\scoop\\shims\\micromamba.exe",
-        "PowerShell 里启用 shell hook（已写入 $PROFILE）：",
-        "  (& micromamba shell hook -s powershell -r D:\\micromamba) | Out-String | Invoke-Expression"
+        "Root prefix: D:\\micromamba (envs/ + pkgs/ + .mambarc live here).",
+        "User env vars already set: MAMBA_ROOT_PREFIX, MAMBA_EXE, MAMBARC.",
+        "PowerShell hook already written into $PROFILE; open a new pwsh to use:",
+        "  micromamba activate <env> / micromamba create -n <env> python=3.13",
+        "Update this manifest: pwsh -File ~\\scoop\\buckets\\self\\update-micromamba.ps1"
     ],
     "checkver": {
         "github": "https://github.com/mamba-org/micromamba-releases"
